@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { MdArrowForwardIos } from "react-icons/md";
@@ -47,7 +46,7 @@ const LatestUpdate = () => {
           <div className=''>
               <div className='flex justify-between mb-5'>
                   <div className='flex gap-1 justify-center text-center items-center text-gray-600 uppercase'>
-                    <div className='text-lg font-bold'><p>Latest Update</p></div>          
+                    <div className='text-base md:text-lg font-semibold'><p>Latest Update</p></div>          
                     <div className='mt-1'><MdArrowForwardIos /></div>
                   </div>
                 <div className='flex gap-2'>
@@ -61,7 +60,7 @@ const LatestUpdate = () => {
             </div>
             <div className='grid grid-cols-8 gap-2'>
                 {CaradData.map((data, i) => (
-                    <div key={i} className='col-span-2 flex flex-col justify-between border-[1px] border-gray-300 rounded-2xl px-3 py-3 text-sm shadow-lg'>
+                    <div key={i} className='col-span-4 md:col-span-2 flex flex-col justify-between border-[1px] border-gray-300 rounded-2xl px-3 py-3 text-sm shadow-lg'>
                         <div className='pb-1'>{data.title}</div>
                         <p className='text-gray-600'>{data.time}</p>
                     </div>

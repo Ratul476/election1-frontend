@@ -60,12 +60,12 @@ const KeyDistrict = () => {
   return (
     <div className='container mx-auto mt-10'>
       <div className='mt-8'>
-              <div className='text-lg font-bold'><p>Key congressional district results</p></div> 
+              <div className='text-lg font-semibold'><p>Key congressional district results</p></div> 
                         
-                        <div className='grid grid-cols-12 gap-6 mt-2 '>
+                        <div className='grid grid-cols-12 gap-6 mt-3'>
                             
                             {electionData.map((data, i) => (
-                              <div key={i} className='col-span-4 border-[1px] border-gray-300 rounded-2xl px-3 py-3 text-sm shadow-lg'>
+                              <div key={i} className='col-span-12 md:col-span-4 border-[1px] border-gray-300 rounded-2xl px-3 py-3 text-sm shadow-lg'>
                                   <div className='flex gap-1 items-center'>
                                       <div className='flex gap-2 text-base'>
                                             <p className='font-bold'>{data?.Division}</p>

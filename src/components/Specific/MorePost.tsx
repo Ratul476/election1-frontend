@@ -34,9 +34,9 @@ const MorePost = () => {
   return (
     <div className='container mx-auto mt-10'>
           <div className='border-b-[1px] border-gray-500 pb-5'>
-              <div className='text-4xl font-bold mb-10 text-gray-700'>Key states to watch</div>
+              <div className='text-2xl md:text-4xl font-semibold mb-4 md:mb-8 text-gray-700'>Key states to watch</div>
               <div className='flex justify-between mb-2'>
-                  <div className='text-2xl font-bold pb-5'>Harris vs. Trump</div>          
+                  <div className='text-lg md:text-2xl font-semibold pb-4'>Harris vs. Trump</div>          
                     <div className='flex gap-2'>
                         <div className='w-8 h-8 flex justify-center items-center rounded-full border-[1px] border-black bg-[#f2f2f2]'>
                             <FaArrowLeftLong color='#6d6d6d'/>
@@ -48,7 +48,7 @@ const MorePost = () => {
                 </div>
                 <div className='grid grid-cols-6 gap-2'>
                     {CaradData.map((data, i) => (
-                        <div key={i} className='col-span-2'>
+                        <div key={i} className='col-span-3 md:col-span-2'>
                             <Image className='w-full h-auto object-cover' src={data.image} width={300} height={200} alt='' />
                             <p className='text-sm text-gray-600 px-4 py-2'>{data.title}</p>
                         </div>

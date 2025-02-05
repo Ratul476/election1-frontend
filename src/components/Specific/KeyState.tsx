@@ -191,17 +191,17 @@ const KeyState = () => {
       <div className='container mx-auto mt-10'>
         <div className=''>
             <div className='border-t-[1px] border-gray-500 pt-5'>
-              <div className='text-4xl font-semibold'>Key states to watch</div>
-              <p className='text-xl text-gray-700 leading-7 mt-5'>The presidency is likely to be decided in these seven swing states, along with Nebraska’s 2nd District and Maine’s 2nd District.</p>
+              <div className='text-2xl md:text-4xl font-semibold'>Key states to watch</div>
+              <p className='text-base md:text-xl text-gray-700 leading-7 mt-2 md:mt-4'>The presidency is likely to be decided in these seven swing states, along with Nebraska’s 2nd District and Maine’s 2nd District.</p>
               </div>
             
-              <div className='mt-8'>
-                  <div className='text-lg font-bold'><p>Key Division</p></div> 
+              <div className='mt-4 selection:md:mt-8'>
+                  <div className='text-lg font-semibold'><p>Key Division</p></div> 
                   
-                  <div className='grid grid-cols-12 gap-6 mt-2 '>
+                  <div className='grid grid-cols-12 gap-4 md:gap-6 mt-3'>
                       
                       {electionData.map((data, i) => (
-                        <div key={i} className='col-span-4 border-[1px] border-gray-300 rounded-2xl px-3 py-3 text-sm shadow-lg'>
+                        <div key={i} className='col-span-12 md:col-span-4 border-[1px] border-gray-300 rounded-2xl px-3 py-3 text-sm shadow-lg'>
                             <div className='flex gap-1 items-center'>
                                 <div className='flex gap-2 text-base'>
                                       <p className='font-bold'>{data?.Division}</p>
@@ -221,7 +221,7 @@ const KeyState = () => {
                                               <p className='text-sm font-bold'>{vote?.candidate}</p>
                                               <p className='text-xs'>{vote?.party}</p>
                                           </div>
-                                          <div className='col-span-1 '>{vote?.pct}</div>
+                                          <div className='col-span-1'>{vote?.pct}</div>
                                           <div className='col-span-1'>{vote?.ev}</div>
                                       </div>
                                   </div>

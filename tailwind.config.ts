@@ -28,7 +28,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      container: { center: true, padding: "30px" },
+      container: { center: true, padding: "25px" },
     },
   },
   plugins: [],

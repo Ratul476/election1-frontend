@@ -12,10 +12,6 @@ function ResultByState() {
                 { title: 'Accessibility' },
                 { title: 'Obi..' },
                 { title: 'Weather' },
-                { title: 'Arts & Entertainment' },
-                { title: 'Recipes' },
-                { title: 'Accessibility' },
-                { title: 'Obi..' },
             ],
         },
         {
@@ -29,11 +25,6 @@ function ResultByState() {
                 { title: 'Style' },
                 { title: 'Sports' },
                 { title: 'Business' },
-                { title: 'Climate' },
-                { title: 'Well+Bing' },
-                { title: 'D.C,Md.,& Va.' },
-                { title: 'Sports' },
-                { title: 'Business' },
             ],
         },
         {
@@ -44,11 +35,6 @@ function ResultByState() {
                 { title: 'Newsletters' },
                 { title: 'Washington' },
                 { title: 'Reprints' },
-                { title: 'Post Store' },
-                { title: 'Books' },
-                { title: 'Print Special' },
-                { title: 'Today’s' },
-                { title: 'Public' },
                 { title: 'Post Store' },
                 { title: 'Books' },
                 { title: 'Print Special' },
@@ -65,11 +51,6 @@ function ResultByState() {
                 { title: 'News Tip' },
                 { title: 'Vulnerability' },
                 { title: 'Licensing' },
-                { title: 'Correction' },
-                { title: 'News Tip' },
-                { title: 'Vulnerability' },
-                { title: 'Vulnerability' },
-                { title: 'Licensing' },
             ],
         },
     ];
@@ -82,10 +63,10 @@ function ResultByState() {
 
             <div className="grid grid-cols-4">
                 {footerData.map((data, i) => (
-                    <div key={i} className="col-span-1">
+                    <div key={i} className="col-span-2 md:col-span-1">
                         {data.linksData.map((sub, i) => (
                             <div key={i} className="">
-                                <p className="pb-2 font-medium">{sub.title}</p>
+                                <p className="pb-1 font-medium">{sub.title}</p>
                             </div> 
                         ))}
                     </div> 
